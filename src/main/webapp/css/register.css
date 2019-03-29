@@ -1,0 +1,76 @@
+.gm-register-title{
+    background-color:#f5f5f5;
+    padding:40px 0px;
+}
+.gm-register-title h1{
+    margin:0 auto;
+    text-align:center;
+
+}
+.gm-register-content{
+    color:#6c757d;
+}
+.gm-register-content h2{
+    color:#000000;
+}
+select{
+    padding:10px 0px 10px 10px;
+    width:250px;
+    border:0;
+    border-radius:10px;
+    margin-right:10px;
+    font-size:15px;
+    margin-bottom:10px;
+    background-color:gray;
+}
+.gm-register-content table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    overflow:scroll;
+}
+
+.gm-register-content td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.contact_add_btn_wrapper{
+    margin:0 auto;
+    padding:10px 5px;
+}
+.gm_register_contacts{
+    max-height:200px;
+    overflow:scroll;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+.gm-register-content td a{
+    cursor:pointer;
+}
+
+#company_add_contact_btn{
+    background-color:#008751 !important;
+    border:0;
+}
+#gm_show_contacts_btn{
+    background-color:#3b755e;
+    border :0;
+}
+#company_reg_button{
+    border:1px solid #808080;
+}
+@media(max-width:800px){
+    #gm_register_person{
+        margin-bottom:15px;
+    }
+}
+@media(max-width:400px){
+    .gm-register-content table{
+        width:100%;
+        display:block;
+        overflow-x:auto;
+        ms-overflow-x:auto;
+    }
+}

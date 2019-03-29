@@ -1,0 +1,728 @@
+html{
+    overflow:hidden;
+    height:100%;
+
+}
+body{
+    background-color:#f5f5f5;
+    overflow-x:hidden;
+    margin:0;
+    padding:0;
+    border:0;
+}
+/* The location pointed to by the popup tip. */
+.housesSection .popup-tip-anchor {
+    height: 0;
+    position: absolute;
+    /* The max width of the info window. */
+    width: 200px;
+}
+.housesSection .popup-tip-anchor:hover{
+    cursor:pointer;
+}
+/* The bubble is anchored above the tip. */
+.housesSection .popup-bubble-anchor {
+    position: absolute;
+    width: 100%;
+    bottom: /* TIP_HEIGHT= */ 8px;
+    left: 0;
+}
+/* Draw the tip. */
+/*.housesSection .popup-bubble-anchor::after {*/
+    /*content: "";*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*!* Center the tip horizontally. *!*/
+    /*transform: translate(-50%, 0);*/
+    /*!* The tip is a https://css-tricks.com/snippets/css/css-triangle/ *!*/
+    /*width: 0;*/
+    /*height: 0;*/
+    /*!* The tip is 8px high, and 12px wide. *!*/
+    /*border-left: 6px solid transparent;*/
+    /*border-right: 6px solid transparent;*/
+    /*border-top: !* TIP_HEIGHT= *! 8px solid #0093D0;*/
+/*}*/
+/*!* The popup bubble itself. *!*/
+/*.housesSection .popup-bubble-content {*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*transform: translate(-50%, -100%);*/
+    /*!* Style the info window. *!*/
+    /*background-color: #0093D0;*/
+    /*padding: 5px;*/
+    /*border-radius: 5px;*/
+    /*font-family: sans-serif;*/
+    /*overflow-y: auto;*/
+    /*max-height: 60px;*/
+    /*color:#fff;*/
+    /*box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.5);*/
+/*}*/
+
+.housesSection .popup-bubble-anchor::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, 0);
+    /* The tip is a https://css-tricks.com/snippets/css/css-triangle/ */
+    width: 0;
+    height: 0;
+    /* The tip is 8px high, and 12px wide. */
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: /* TIP_HEIGHT= */ 8px solid transparent;
+}
+/* The popup bubble itself. */
+.housesSection .popup-bubble-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -100%);
+    /* Style the info window. */
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: sans-serif;
+    overflow-y: auto;
+    min-height: 35px;
+    color: transparent;
+    box-shadow: 0px 2px 10px 1px transparent;
+    background-image: url("../img/blue-pin.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* */
+.housesSection .houses-container{
+    margin:0 auto;
+    position:relative;
+}
+.housesSection .col-lg-4{
+    margin:0 auto;
+}
+.housesSection #gm_google_map{
+    width:100%; !important;
+    height:calc(100vh - 101px);
+    margin:0;
+}
+.housesSection .no_mrg{
+    margin:0;
+    padding:0;
+    margin:0 auto;
+}
+.housesSection .gm_houses_div {
+    width:100%;
+    border-collapse: separate !important;
+    border-radius:5px;
+    overflow: hidden;
+    perspective: 1px;
+    box-shadow: 0px 0px 6px 3px rgba(100,100,100,0.5);
+    position:absolute;
+    z-index:99;
+    height:82vh;
+    margin:0 auto;
+    margin-top:30px !important;
+    background-color:#fff;
+    margin-left:50px;
+    overflow-y:auto;
+}
+
+.housesSection .gm_houses_div .houses_wrapper {
+
+}
+
+.housesSection #houses_col{
+    margin:0 auto !important;
+}
+/*hidden scoll bar*/
+/*.housesSection .gm_houses_div::-webkit-scrollbar {*/
+    /*display:none;*/
+/*}*/
+
+/*!* Track *!*/
+/*.housesSection .gm_houses_div::-webkit-scrollbar-track {*/
+    /*box-shadow: inset 0 0 5px grey;*/
+    /*border-radius: 10px;*/
+/*}*/
+
+/*!* Handle *!*/
+/*.housesSection .gm_houses_div::-webkit-scrollbar-thumb {*/
+    /*background-color: transparent;*/
+
+/*}*/
+
+/*!* Handle on hover *!*/
+ /*.gm_houses_div::-webkit-scrollbar-thumb:hover {*/
+    /*background: #0093d0;*/
+/*}*/
+
+/*styling scrollbar*/
+/* width */
+.housesSection .gm_houses_div::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+.housesSection .gm_houses_div::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+.housesSection .gm_houses_div::-webkit-scrollbar-thumb {
+    background: #0093d0;
+    /*border-radius: 10px;*/
+}
+
+/* Handle on hover */
+.housesSection .gm_houses_div::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+/**/
+
+ .houses_div_main{
+    background-color:#fff;
+    border-radius:5px;#supersquare;
+}
+ .houses_div_main h2{
+    color:#05346C;
+    font-size:16px !important;
+     text-align: left;
+     margin: 0;
+}
+ .houses_div_main small{
+     color:#898989;
+     font-size: 12px;
+     width: 100%;
+     display: inherit;
+     text-align: left;
+     margin-bottom: 20px;
+}
+ .houses_div_main p{
+    color:#2A2A2A;
+    font-size: 13px !important;
+     margin-bottom: 7px;
+     text-align: left;
+}
+
+.houses_div_main p:nth-of-type(2) {
+    position: relative;
+    top: -7px;
+}
+
+.gm_houses_div .load-more-houeses {
+    color: #fff;
+    border: none;
+    background-color: #0093D0;
+    padding: 5px 20px;
+    cursor: pointer;
+    display: inherit;
+    margin: 0 auto;
+ }
+
+.gm_houses_div .pagination {
+    display: inline-block;
+    width: auto;
+    height: 30px;
+    margin: 10px auto 20px auto;
+    display: table;
+}
+
+.gm_houses_div .pagination span {
+    padding: 7px 0 4px 0;
+    color: gray;
+    cursor: pointer;
+    border: 1px solid gray;
+    margin: 0 1px;
+    width: 33px;
+    display: inline-block;
+    font-size: 12px;
+    text-align: center;
+}
+
+.gm_houses_div .pagination .activePage{
+    color: #0093D0;
+    border-color: #0093D0;
+}
+.houses_col_wrapper{
+    margin:15px 0px;
+    padding-left:20px;
+}
+ .houses_div_main .col-xl-7{
+    padding:0;
+}
+.housesSection #england_logo:hover{
+    cursor:pointer;
+}
+.housesSection #searchHouses{
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:5px;
+    color:rgba(255,255,255,1);
+}
+.housesSection #showHousesFilters{
+    color:rgba(255,255,255,0.8);
+    padding-right:7px;
+}
+.housesSection .houses_div_header{
+    background-color:#0093D0;
+    padding:5px;
+}
+ .houses_div_main .row{
+    margin-top:10px;
+}
+ .houses_div_main .row:first-child {
+    margin-top:0;
+}
+ .houses-select-wrapper{
+    padding:15px 0px;
+    width: 100%;
+    /*margin-left:10px;*/
+}
+ #houses_select_full{
+    width:100% !important;
+}
+ #houses_select_full select{
+    margin-right:10px;
+}
+ .houses_div_header input[type=text]{
+     background-color:transparent;
+     border:0;
+     width:100%;
+     padding:10px 0px;
+     color:#fff;
+     outline:none;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     box-sizing: border-box;
+     padding-left: 10px;
+}
+ .houses_select select{
+    border-radius:5px;
+    padding:4px 10px;
+}
+.houses_select select.input-lg {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    /* no standardized syntax available, no ie-friendly solution available */
+    border-radius:5px;
+    padding: 11px;
+    outline:none !important;
+    font-size: 14px;
+}
+
+.houses_select select + i.fa {
+    float: right;
+    /*margin-top: -30px;*/
+    margin-right: 5px;
+    /* this is so when you click on the chevron, your click actually goes on the dropdown menu */
+    pointer-events: none;
+    /* everything after this is just to cover up the original arrow */
+    /* (for browsers that don't support the syntax used above) */
+    background-color: #fff;
+    padding-right: 5px;
+    color:gray;
+    font-size:25px;
+    position:absolute;
+    right:15px;
+    top:7px;
+}
+.houses_select .form-control{
+    -webkit-box-shadow: 0px 0px 74px -26px rgba(51,48,51,1);
+    -moz-box-shadow: 0px 0px 74px -26px rgba(51,48,51,1);
+    box-shadow: 0px 0px 74px -26px rgba(51,48,51,1);
+    display:inline-block;
+}
+.inseted{
+    -webkit-box-shadow: 1px 0px 16px 0px rgba(219,208,219,1);
+    -moz-box-shadow: 1px 0px 16px 0px rgba(219,208,219,1);
+    box-shadow: 1px 0px 16px 0px rgba(219,208,219,1);
+}
+.houses_header_search{
+    margin:0 auto;
+    text-align:center;
+    color:#fff;
+}
+.houses_header_search span{
+    cursor:pointer;
+}
+.houses_img_wrapper{
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+.houses_img_text{
+    position:absolute;
+    width:100%;
+    height:100%;
+    font-size:30px;
+    display:block;
+    top:0;
+    bottom:0;
+    color:#fff !important;
+    cursor: pointer;
+}
+.houses_img_text span{
+    font-size:50px;
+}
+.houses_img_text p{
+    color:#000000;
+}
+.span1Wrapper{
+    position:absolute;
+    width:50px;
+    height:100%;
+    left:0;
+    border-radius:5px;
+    display:none;
+}
+.span2Wrapper{
+    position:absolute;
+    width:50px;
+    height:100%;
+    right:0;
+    border-radius:5px;
+    display:none;
+}
+
+.houses_img_wrapper:hover .span2Wrapper{
+    background-color:rgba(0,0,0,0.3);
+    cursor:pointer;
+    display:block;
+}
+.houses_img_wrapper:hover .span1Wrapper{
+    background-color:rgba(0,0,0,0.3);
+    cursor:pointer;
+    display:block;
+}
+.houses_img_text:hover span{
+    display:block;
+}
+
+#slide-left{
+    height:100%;
+    position:absolute;
+    left:10px;
+    top:40%;
+}
+#slide-right{
+    position:absolute;
+    right:10px;
+    top:40%;
+}
+
+.gm_houses_div img{
+    width:100%;
+    border-radius:7px;
+}
+#houses_row .row:first-child{
+    margin-left:10px;
+}
+.text_wrap{
+    position:absolute;
+    right: 0;
+    top:-10px;
+    white-space:nowrap;
+    color:black;
+}
+#priceRangeVal{
+    top: -5px;
+}
+.img_container{
+    width:100%;
+    position:relative;
+}
+.housesSlide{
+    max-height:100%;
+    min-height: 100%;
+}
+.admin_update_houses_a{
+    cursor:pointer;
+}
+.housesSection .price_range_container{
+    position:relative;
+    top:50px;
+}
+.housesSection .space_range_container{
+    position:relative;
+    top: 15px;
+}
+.housesSection .rangeSlider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    height: 3px; /* Specified height */
+    background: #00467F; /* Grey background */
+    outline: none; /* Remove outline */
+    /*opacity: 0.7; !* Set transparency (for mouse-over effects on hover) *!*/
+    /*-webkit-transition: .2s; !* 0.2 seconds transition on hover *!*/
+    /*transition: opacity .2s;*/
+}
+.housesSection .rangeSlider::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    appearance: none !important;
+    width: 25px !important;
+    height: 25px !important;
+    background: url("../img/sld.png") !important;
+    border-radius:30px;
+    cursor: pointer;
+}
+.houses_div_main .col-md-4{
+ margin-bottom:25px;
+}
+.houses_div_main .col-md-12{
+
+}
+
+#string_input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #fff;
+    position: relative;
+    top: 3px;
+    opacity: 0.5;
+}
+#string_input::-moz-placeholder { /* Firefox 19+ */
+    color: #fff;
+    position: relative;
+    top: 3px;
+    opacity: 0.5;
+}
+#string_input:-ms-input-placeholder { /* IE 10+ */
+    color: #fff;
+    position: relative;
+    top: 3px;
+    opacity: 0.5;
+}
+#string_input:-moz-placeholder { /* Firefox 18- */
+    color: #fff;
+    position: relative;
+    top: 3px;
+    opacity: 0.5;
+}
+ #col_hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 96%;
+    background-color:rgba(214, 214, 214, 0.7);
+    height: 2px;
+    padding:0;
+     margin:20px 0px;
+}
+ .houses_row_left{
+     min-height:150px;
+     max-height:150px;
+     margin-bottom:30px;
+ }
+/* MODAL */
+
+.housesSection #spaceRangeValue {
+    position:relative;
+    right: 0px;
+    top: 5px;
+}
+
+.propertyCountText {
+    text-align: left;
+}
+
+/* */
+/*.housesSection .nav-container{*/
+    /*width:100% !important;*/
+/*}*/
+.housesSection .sliders{
+    width: 100%;
+}
+
+.housesSection .sliders .rangeSliders {
+    width: 65%;
+}
+.housesSection .rangeSlider::-ms-thumb{
+    background: url("../img/sld.png") !important;
+}
+/* SLIDER */
+
+/* */
+.housesSection .bottom_ranges_wrapper{
+    width:100%;
+}
+.housesSection .rangeSlider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+}
+.housesSection .align-houses{
+    margin:0px 20px;
+}
+.housesSection .rg_wrapper{
+    width:92%;
+    margin:0 auto;
+}
+.shakeDiv { animation: shake 0.5s; animation-iteration-count: infinite; }
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+@media(max-width:1500px){
+    .gm_houses_div {
+        position:relative;
+        margin:0;
+        text-align:center;
+    }
+    .houses-container{
+        margin:0;
+    }
+    .houses_header_search span{
+        margin:0 auto;
+        text-align:center;
+    }
+    .houses_div_main .col-md-12{
+        /*margin-bottom:130px;*/
+    }
+     .align-houses{
+         margin:0px;
+     }
+    .text_wrap2{
+        position:absolute;
+        left:66%;
+        top:-10px;
+        white-space:nowrap;
+    }
+    #ranges_2{
+        position:relative;
+        top:0;
+        left:0;
+    }
+    #ranges_1{
+        position:relative;
+        left:0;
+        right:0;
+    }
+    .rangeSlider2 {
+        width:33%;
+    }
+    .rg4{
+        left:33%;
+    }
+}
+
+@media(max-width:1300px){
+    .housesSlide{
+        height:100%;
+    }
+    #col_hr{
+        position:relative;
+        bottom:0;
+        margin:20px 0px;
+    }
+    .houses_row_left{
+        /*min-height:300px;*/
+        /*max-height:100%;*/
+        min-height: auto;
+        max-height: 100%;
+        margin:0;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .houses_header_search span {
+        width: 100%;
+        float: none;
+    }
+
+    .houses-select-wrapper {
+        margin: 0 auto;
+    }
+
+    .page-header .nav-container nav {
+        padding: 13px 25px;
+    }
+
+    .housesSection .sliders .rangeSliders {
+        width: 60%;
+    }
+
+    #showHousesFilters {
+        right: 25px;
+    }
+}
+
+@media (max-width: 1098px) {
+    .houses_header_search .col-10 {
+        flex: 0 0 80.333333% !important;
+    }
+}
+
+@media (max-width: 990px) {
+    .housesSection .gm_houses_div {
+        margin: 0 !important;
+    }
+    #showHousesFilters {
+        right: -15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .modal-xxl {
+        width: 90%;
+        max-width:1700px;
+    }
+}
+
+
+@media(max-width:625px){
+    .gm_houses_div{
+        margin:0 auto;
+    }
+    .houses-select-wrapper{
+        padding:15px 0px;
+        width:100%;
+    }
+    #showHousesFilters {
+        right: 0px;
+    }
+}
+
+/*@media (max-width: 409px) {*/
+    /*.houses_header_search .col-10 {*/
+        /*flex: 0 0 80.333333% !important;*/
+    /*}*/
+/*}*/
+
+.display-none {
+    display: none;
+}
+
+.clickHandler {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.houses_row_left .gel-font {
+    font-size: 11px;
+}
+
+.houses_row_left .colliers-choise {
+
+}
+
+.imgContainer {
+    height: 100%;
+    width: 100%;
+}

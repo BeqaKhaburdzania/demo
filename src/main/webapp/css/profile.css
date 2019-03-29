@@ -1,0 +1,29 @@
+.gm-profile{
+padding-bottom:50px;
+padding-top:50px;
+}
+.profile-info .row{
+    background-color:#fff;
+}
+.gm-profile .btn{
+    color:#fff !important;
+    padding:10px 5px;
+}
+.gm-profile p{
+    color:#a9a7a7;
+}
+.change_password_container{
+    border:1px solid #e5e5e5;
+    padding:25px 0px;
+}
+#company_users_list table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#company_users_list td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}

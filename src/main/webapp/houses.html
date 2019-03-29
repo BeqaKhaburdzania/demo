@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        type='text/css'>
+    <link rel="shortcut icon" type="image/x-icon"
+        href="http://www.sociablesurveyors.com/wp-content/uploads/Colliers.png"/>
+    <link rel="stylesheet" href="css/BPG/bpg-nino-mtavruli.css">
+    <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/houses.css">
+    <link rel="stylesheet" href="css/house.css">
+    <link rel="stylesheet" href="nouislider.min.css">
+    <link rel="stylesheet" href="css/nouisliderStyle.css">
+  <title>Colliers</title>
+  <!--<link rel="stylesheet" href="multirange.css">-->
+
+</head>
+<body>
+<!-- Nav -->
+
+<div id="preloader" class="transition smooth-loader-wrapper">
+  <div class="transition smooth-loader">
+    <div class="transition loader1">
+      <div class="transition loader-target">
+        <div class="transition loader-target-main"></div>
+        <div class="transition loader-target-inner"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="gm_wrap" class="housesSection" style="display:none;">
+  <!-- Button trigger modal -->
+  <!-- Modal -->
+  <div class="modal fade" id="houseModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+       aria-hidden="true">
+    <div class="modal-dialog modal-xxl" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTitle"></h5>
+          <span style="font-size:50px; color:gray; cursor:pointer;" id="see_single_house" class="fa fa-angle-right"
+                aria-hidden="true"></span>
+        </div>
+        <div class="modal-body">
+          <section class="single_house">
+            <div class="single_house_slider">
+              <div class="img_wrapper">
+                <span id="single_slide_left" class="fa fa-angle-left"></span>
+                <span id="single_slide_right" class="fa fa-angle-right"></span>
+                <div class="singleSlideImagesFull">
+                </div>
+              </div>
+            </div>
+            <div class="single_house_footer">
+              <div class="row no-gutters">
+                <div class="col-lg-3 single_mrg">
+                  <h2>ბინის აღწერა</h2>
+                  <p id="single_house_description">ბინა მდებარეობს ცოტნე დადიანის ქუჩაზე,ძალიან მაგარი ბინაა დიდი სიამოვნებით დაითრევდა კაცი ესეთ
+                    მაგარ ბინას, მოკლედ სასწაული ბაითია ბიჭებო და რავი ვისაც გაგისწორდებათ იყიდეთ</p>
+                </div>
+                <div class="col-lg-5">
+                  <div class="row text-center" id="first_icons_row">
+                    <div class="col-md-3">
+                      <img src="img/icsteps.png" alt="">
+                      <br/>
+                      <br/>
+                      <h6>სართული</h6>
+                      <span id="single_house_steps">4/8</span>
+                    </div>
+                    <div class="col-md-3">
+                      <img src="img/icbed.png" alt="">
+                      <br/>
+                      <br/>
+                      <h6>საძინებელი</h6>
+                      <span id="single_house_bedroom"> 8</span>
+                    </div>
+                    <br/>
+                    <div class="col-md-3">
+                      <img src="img/icwater.png" alt="">
+                      <br/>
+                      <br/>
+                      <h6>სველი წერტილი</h6>
+                      <span id="single_house_wash">8</span>
+                    </div>
+                  </div>
+                  <div class="row text-center">
+                    <div class="col-md-3">
+                      <img src="img/iccar.png" alt="">
+                      <br/>
+                      <br/>
+                      <h6>პარკინგი</h6>
+                      <span id="single_house_parking">8</span>
+                    </div>
+                    <div class="col-md-3">
+                      <img src="img/icou.png" alt="">
+                      <br/>
+                      <br/>
+                      <h6>აივანი</h6>
+                      <span id="single_house_balcony">8</span>
+                    </div>
+                    <!--<div class="col-md-4">-->
+                      <!--<img src="img/icre.png" alt="">-->
+                      <!--<br/>-->
+                      <!--<br/>-->
+                      <!--<h6>რემონტი</h6>-->
+                      <!--<span id="single_house_repair">8</span>-->
+                    <!--</div>-->
+                  </div>
+                </div>
+                <div class="col-lg-5" id="house_col_top">
+                  <div class="single_house_div_wrapper broker-info-container">
+                    <h3 id="house_name">ბინა ეკოლოგიურად სუფთა</h3>
+                    <!--<br/>-->
+                    <small id="house_city_region">თბილისი,ცინცაძის ქუჩა საბურთალო</small>
+                    <hr>
+                    <div class="row">
+                      <div class="col-xl-5">
+                        <div class="card text-center">
+                          <div class="card-header">
+                            <h3 id="house_space">160 მ <span id="supersquare" class="rangesquare">2</span></h3>
+                          </div>
+                        </div>
+                        <div class="card text-center">
+                          <div class="card-header">
+                            <h3 id="house_price">160,000 <span class="gel-font">a</span></h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-7">
+                        <div class="row">
+                          <div class="col-xl-3" id="brocker_photo">
+                            <img id="single_brocker" class="rounded-circle" src="img/no-image.jpg" alt="">
+                          </div>
+                          <div class="col-xl-9" id="brocker_info">
+                            <span id="house_user">დათა ფირცხალავა</span>
+                            <br/>
+                            <small id="house_userPhonenumber">+995 595 69 02 29</small>
+                            <br/>
+                            <!--<small>+995 598 66 18 18</small>-->
+                          </div>
+                          <div class="col-xl-12">
+                            <button style="width:100%;" id="contact_brocker" class="btn btn-primary">დაუკავშირდი მრჩეველს</button>
+                          </div>
+                        </div>
+                        <br/>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">დახურვა</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="transition gm_main_header">
+    <section class="transition gm_nav_section page-header" id="gm_top_nav">
+      <div class="transition nav-container max-width-container">
+        <div class="transition gm-nav-wrapper">
+          <nav class="transition navbar navbar-expand-md navbar-light">
+            <a class="transition navbar-brand colliers-logo" href="/"><img src="img/logo.png" alt=""></a>
+            <button class="transition navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+              <span class="transition navbar-toggler-icon"></span>
+            </button>
+            <div class="transition collapse navbar-collapse navbar-toggleable-xs" id="navbarTogglerDemo02">
+              <ul class="transition navbar-nav ml-auto">
+                <li class="transition nav-item">
+                  <a class="transition nav-link" href="#">ჩვენ შესახებ</a>
+                </li>
+                <li class="transition nav-item">
+                  <a class="transition nav-link" href="houses.html">ბინები</a>
+                </li>
+                <li class="transition nav-item">
+
+                </li>
+                <li class="transition nav-item">
+
+                </li>
+                <li class="transition nav-item">
+                  <a class="transition nav-link" href="#">კონტაქტი</a>
+                </li>
+              </ul>
+              <a id="gm-top-btn" class="transition gm-btn btn-blue btn-default navbar-btn nav-link" href="/login.html">
+                  <span class="plus-span">+</span> <span style="font-family: 'BPG Nino Mtavruli'">შესვლა</span></a>
+              &nbsp;&nbsp;&nbsp;&nbsp; <img id="england_logo" src="img/english.png" alt="">
+            </div>
+          </nav>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- -->
+  <div class="transition houses-container houses_section_indexed">
+    <div class="transition row flex-sm-row-reverse">
+      <div class="transition col-md-8 no_mrg" id="map_col">
+        <div class="transition" id="gm_google_map"></div>
+      </div>
+      <div class="transition col-md-4 no_mrg" id="houses_col">
+        <div class="transition gm_houses_div">
+          <div class="transition houses_wrapper">
+            <div class="transition houses_div_header">
+              <div class="transition houses_header_search">
+                <div class="transition row">
+                  <div class="transition col-1">
+                    <span id="searchHouses" style="font-size:30px;" class="transition far fa-search float-left"></span>
+                  </div>
+                  <div class="transition col-10">
+                    <input type="text" id="string_input" maxlength="9" placeholder="ჩაწერე, ქალაქი, უბანი ან ქუჩა...">
+                  </div>
+                  <div class="transition col-1">
+                    <span style="font-size:30px;color: #fff;position:relative; top: 8px;" class="transition fal fa-cog float-right"
+                          id="showHousesFilters"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="transition houses_div_main smallContainer" id="small_houses">
+              <div class="houses_select">
+                <div class="align-houses">
+                  <form action="">
+
+                    <div class="houses-select-wrapper">
+                      <div class="row">
+                        <div class="col-xl-4 onSmall">
+                          <select class="form-control input-lg" id="cities">
+                            <option value="0"> ქალაქი</option>
+                          </select>
+                          <i class="fa fa-angle-down"></i>
+                        </div>
+                        <div class="col-xl-4 onSmall">
+                          <select class="form-control input-lg" id="districts">
+                            <option value="0">უბანი</option>
+                          </select>
+                          <i class="fa fa-angle-down"></i>
+                        </div>
+                        <div class="col-xl-4 onSmall">
+                          <select class="form-control input-lg" id="house_types">
+                            <option value="0">ტიპი</option>
+                          </select>
+                          <i class="fa fa-angle-down"></i>
+                        </div>
+                        <div class="col-xl-2 display-none onLarge">
+                          <select class="form-control input-lg" id="conditions">
+                            <option selected value="0">მდგომარეობა</option>
+                          </select>
+                          <i class="fa fa-angle-down"></i>
+                        </div>
+                        <div class="col-xl-2 display-none onLarge">
+                          <select class="form-control input-lg" id="rooms">
+                            <option selected value="">ოთახები</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select>
+                          <i class="fa fa-angle-down"></i>
+                        </div>
+                        <div class="col-xl-2 display-none onLarge">
+                          <select class="form-control input-lg" name="" id="sorting">
+                            <option selected value="">სორტირება</option>
+                            <option value="1">ფასით</option>
+                            <option value="2">ფართით</option>
+                          </select>
+                          <i class="fa fa-angle-down"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                    </div>
+                    <div class="rg_wrapper">
+                      <div class="sliders">
+                        <div class="transition ranges space_range_container" id="ranges_4">
+                          <!--<input id="spaceRange" type="range" class="rangeSlider space_range" multiple value="0,100"/>-->
+                          <div id="firstSlider" class="rangeSliders"></div>
+                          <div class="text_wrap">
+                              <small class="rg_val" id="spaceRangeValue">
+                              </small>
+                          </small>
+                          </div>
+                        </div>
+                        <div class="transition ranges price_range_container" id="ranges_3">
+                          <!--<input id="priceRange" type="range" class="rangeSlider price_range" multiple value="0,100"/>-->
+                          <div id="secondSlider" class="rangeSliders"></div>
+                          <div class="text_wrap" id="priceRangeVal">
+                              <small class="rg_val" id="priceRangeValue">
+                              </small>
+                          </div>
+                        </div>
+                      </div>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <h3 style="font-size:16px;" id="propertyCountText">ნაპოვნია <span id="propertyCount"></span> ბინა</h3>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <br/>
+              <div class="transition row align-houses houses_div_main" id="houses_row_small">
+              </div>
+              <!--<button class="load-more-houeses" data-page-counter="0">მეტის ჩატვირთვა</button>-->
+              <div class="pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<!--<script src="multirange.js"></script>-->
+<script src="nouislider.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/main.js"></script>
+<script src="js/house.js"></script>
+<script src="js/houses.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAibDwZPFPU6qdLXwCiK9xw3T8pABJuweE&libraries=places"></script>
+</body>
+</html>

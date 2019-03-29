@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type='text/css'>-->
+    <link rel="shortcut icon" type="image/x-icon" href="http://www.sociablesurveyors.com/wp-content/uploads/Colliers.png" />
+    <link rel="stylesheet" href="css/BPG/bpg-nino-mtavruli.css">
+    <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/house.css">
+    <link rel="stylesheet" href="css/houses.css">
+    <!--<link rel="stylesheet" href="multirange.css">-->
+    <link rel="stylesheet" href="nouislider.min.css">
+    <link rel="stylesheet" href="css/nouisliderStyle.css">
+    <link rel="stylesheet" href="owlCarousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlCarousel/css/owl.theme.default.min.css">
+    <title>Colliers</title>
+</head>
+<body>
+<!-- Nav -->
+
+  <div id="preloader" class="transition smooth-loader-wrapper" style="display: block;">
+    <div class="transition smooth-loader">
+      <div class="transition loader1">
+      <div class="transition loader-target">
+        <div class="transition loader-target-main"></div>
+        <div class="transition loader-target-inner"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="gm_wrap" class="indexSection" style="display:none;">
+      <section class="gm_index">
+        <div class="transition gm_main_header">
+            <section class="transition gm_nav_section" id="gm_top_nav">
+                <div class="transition nav-container">
+                    <div class="transition gm-nav-wrapper">
+                        <nav class="transition navbar navbar-expand-md navbar-light">
+                            <a class="transition navbar-brand colliers-logo" href="/"><img src="img/logo.png" alt="" class="transition"></a>
+                            <button class="transition navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="transition navbar-toggler-icon"></span>
+                            </button>
+                            <div class="transition collapse navbar-collapse navbar-toggleable-xs" id="navbarTogglerDemo02">
+                                <ul class="transition navbar-nav ml-auto">
+                                    <li class="transition nav-item">
+                                        <a class="transition nav-link" href="http://www.colliers.com/en-ge/georgia" target="_blank">ჩვენ შესახებ</a>
+                                    </li>
+                                    <li class="transition nav-item">
+                                        <a class="transition nav-link" href="houses.html">ბინები</a>
+                                    </li>
+                                    <li class="transition nav-item">
+
+                                    </li>     <li class="transition nav-item">
+
+                                </li>     <li class="transition nav-item">
+                                    <a class="transition nav-link" href="#">კონტაქტი</a>
+                                </li>
+                                </ul>
+                                <a id="gm-top-btn" class="transition gm-btn btn-blue btn-default navbar-btn nav-link" href="/login.html"><span class="plus-span"> + </span><span style="font-family: 'BPG Nino Mtavruli'">შესვლა</span></a>
+                                <a href=href="/register.html" class="transition gm-btn btn-blue btn-default navbar-btn nav-link" style="border:none;font-size: 12px;margin-left: 20px;"><span style="font-family: 'BPG Nino Mtavruli'">რეგისტრაცია</span></a>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </section>
+        </div>
+<!--<section class="transition gm-top-section">-->
+    <!---->
+<!--</section>-->
+
+          <div id="main-slider">
+              <div class="top-section-search-container nav-container padding-l-r-15">
+                  <!--<h1>იპოვე შენი ოცნების სახლი</h1>-->
+                  <div class="top-section-search">
+                      <div style="float: right" class="search-settings red-tooltip" tabindex="0" data-toggle="tooltip" data-placement="right" title="დეტალური ძებნა">
+                          <a href="houses.html"><i class="fal fa-cog"></i></a>
+                      </div>
+                      <div class="transition gm-wrapper">
+                          <div class="transition text-center">
+                              <form id="gm_main_find" action="#" method="post">
+                                  <!--<div class="row ng-center-index">-->
+                                  <div class="input-group mb-3">
+                                      <input type="text" id="index_search_input" class="form-control" placeholder="ჩაწერეთ, ქალაქი, უბანი ან ქუჩა...">
+                                      <div class="input-group-append">
+                                          <button type="submit" id="gm_top_search_btn" class="input-group-text transition btn gm-search-btn"><span id="gm-search-span" class="transition far fa-search"></span></button>
+                                      </div>
+                                      <div class="suggested-search"></div>
+                                  </div>
+                                  <!--</div>-->
+                              </form>
+                          </div>
+                      </div>
+                      <div class="transition gm-wrapper blue-bg">
+                          <div class="transition">
+                              <div class="range-slider-container">
+                                  <div class="rg_wrapper">
+                                      <div class="index-page-range-sliders">
+                                          <div class="transition ranges space_range_container" id="ranges_5">
+                                              <!--<input id="spaceRange" type="range" class="rangeSlider space_range" multiple value="0,100"/>-->
+                                              <div id="firstSlider" class="rangeSliders"></div>
+
+                                              <div class="text_wrap">
+                                                  <small class="rg_val" id="spaceRangeValue">
+                                                      <!--50მ2 - 1000მ2+-->
+                                                  </small>
+                                                  </small>
+                                              </div>
+                                          </div>
+                                          <div class="transition ranges price_range_container" id="ranges_6">
+                                              <!--<input id="priceRange" type="range" class="rangeSlider price_range" multiple value="0,100"/>-->
+                                              <div id="secondSlider" class="rangeSliders"></div>
+                                              <div class="text_wrap" id="priceRangeVal1">
+                                                  <small class="rg_val" id="priceRangeValue">
+                                                      <!--1000 <span class="gel-font">a</span> - 2000 <span class="gel-font">a</span>+-->
+                                                  </small>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <br/>
+                                      <br/>
+                                      <br/>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="owl-carousel" DataItems="1" dataMargin="10" dataNav="false" dataAutoHeight="false" dataAutoplay="false"
+              dataAutoPlaySpeed="432000" dataAutoPlayTimeout="432000" dataAutoplayHoverPause="false" dataLoop="true" dataMouseDrag="false"
+              dataTouchDrag="false" dataPullDrag="false" dataResponsiveItemSmall="1" dataResponsiveItemMedium="1"
+                   dataResponsiveItemBig="1" dataResponsiveSmallNav="false" dataResponsiveMediumNav="false" dataResponsiveSmallNav="false">
+
+              </div>
+          </div>
+
+<!--<section class="transition top-footer">-->
+    <!--<div class="transition gm-container">-->
+        <!--<div class="transition row">-->
+            <!--<div class="transition col-sm-8 col-xs-12">-->
+                <!--<h3 id="top-footer-h3">დარეგისტრირდით და გამოიწერეთ თქვენთვის<br/>საინტერესო ინფორმაცია უძრავი ქონების შესახებ</h3>-->
+            <!--</div>-->
+            <!--<div class="transition col-sm-4 col-xs-12">-->
+                <!--<a class="transition gm-btn btn-white btn-default float-right" href="/register.html"> + <span>რეგისტრაცია</span></a>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
+
+<!--<footer class="transition gm-main-footer">-->
+    <!--<div class="transition footer-wrapper">-->
+        <!--<div class="transition gm-container ">-->
+            <!--<div class="transition row">-->
+                    <!--<div class="transition col-lg-6">-->
+                        <!--<img id="gm-footer-logo" src="img/footer-logo.png" alt="">-->
+                        <!--<p>"Colliers International Georgia" სრულ მომსახურებას სთავაზობს ინვესტორებს, უძრავი ქონების მესაკუთრეებს-->
+                            <!--,მოიჯარეებსა და დეველოპერებს. კომპანიის ძირითად მიმართულებებს-->
+                            <!--უძრავი ქონების კვლევა, კონსალტინგი და კვლევა წარმოადგენს.</p>-->
+                        <!--<span>0322 22 44 77</span><br/>-->
+                        <!--<span>ალექსიძის ქ. 12, თბილისი</span>-->
+                    <!--</div>-->
+                    <!--<div class="transition col-lg-6">-->
+                        <!--<div class="transition float-right noTransition" id="gm_google_map">-->
+                            <!--<h1>daskdaskdksakd</h1>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<hr id="footer-hr">-->
+            <!--</div>-->
+            <!--<div class="transition gm-container" id="gm_footer_list">-->
+                <!--<div class="transition row">-->
+                    <!--<div class="transition col-lg-6 col-xs-12">-->
+                        <!--<span id="gm-copyright">2018. ყველა უფლება დაცულია</span>-->
+                    <!--</div>-->
+                    <!--<div class="transition col-lg-6 col-xs-12">-->
+                        <!--<ul class="transition footer-ul float-right">-->
+                            <!--<li class="transition nav-item"><span class="transition fa fa-facebook-f"></span></li>-->
+                            <!--<li class="transition nav-item"><span class="transition fa fa-linkedin"></span></li>-->
+                            <!--<li class="transition nav-item"><span class="transition fa fa-google-plus"></span></li>-->
+                            <!--<li class="transition nav-item"><span class="transition fa fa-youtube-play"></span></li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</footer>-->
+      </section>
+      <div class="choosen-flats-div nav-container padding-l-r-15">
+          <h4>რჩეული ბინები</h4>
+          <button>ყველა შეთავაზება</button>
+          <div id="flats-slider">
+              <div class="owl-carousel" DataItems="4" dataMargin="10" dataAutoHeight="false" dataNav="true" dataAutoplay="false"
+                   dataAutoPlaySpeed="4000" dataAutoPlayTimeout="2000" dataAutoplayHoverPause="true" dataLoop="true" dataMouseDrag="true"
+                   dataTouchDrag="true" dataPullDrag="true" dataResponsiveItemSmall="2" dataResponsiveItemMedium="3"
+                   dataResponsiveItemBig="4" dataResponsiveSmallNav="true" dataResponsiveMediumNav="true" dataResponsiveBigNav="true">
+              </div>
+          </div>
+      </div>
+
+      <div id="gm_wrap" class="housesSection">
+          <!-- Button trigger modal -->
+          <!-- Modal -->
+          <div class="modal fade" id="houseModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+               aria-hidden="true">
+              <div class="modal-dialog modal-xxl" role="document">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title" id="modalTitle"></h5>
+                          <span style="font-size:50px; color:gray; cursor:pointer;" id="see_single_house" class="fa fa-angle-right"
+                                aria-hidden="true"></span>
+                      </div>
+                      <div class="modal-body">
+                          <section class="single_house">
+                              <div class="single_house_slider">
+                                  <div class="colliers-choise"><img src="img/rcheuli.png"></div>
+                                  <div class="img_wrapper">
+                                      <span id="single_slide_left" class="fa fa-angle-left"></span>
+                                      <span id="single_slide_right" class="fa fa-angle-right"></span>
+                                      <div class="singleSlideImagesFull">
+
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="single_house_footer">
+                                  <div class="row no-gutters">
+                                      <div class="col-lg-3 single_mrg">
+                                          <h2>ბინის აღწერა</h2>
+                                          <p id="single_house_description">ბინა მდებარეობს ცოტნე დადიანის ქუჩაზე,ძალიან მაგარი ბინაა დიდი სიამოვნებით დაითრევდა კაცი ესეთ
+                                              მაგარ ბინას, მოკლედ სასწაული ბაითია ბიჭებო და რავი ვისაც გაგისწორდებათ იყიდეთ</p>
+                                      </div>
+                                      <div class="col-lg-5">
+                                          <div class="row text-center" id="first_icons_row">
+                                              <div class="col-md-3">
+                                                  <img src="img/icsteps.png" alt="">
+                                                  <br/>
+                                                  <br/>
+                                                  <h6>სართული</h6>
+                                                  <span id="single_house_steps">4/8</span>
+                                              </div>
+                                              <div class="col-md-3">
+                                                  <img src="img/icbed.png" alt="">
+                                                  <br/>
+                                                  <br/>
+                                                  <h6>საძინებელი</h6>
+                                                  <span id="single_house_bedroom"> 8</span>
+                                              </div>
+                                              <br/>
+                                              <div class="col-md-3">
+                                                  <img src="img/icwater.png" alt="">
+                                                  <br/>
+                                                  <br/>
+                                                  <h6>სველი წერტილი</h6>
+                                                  <span id="single_house_wash">8</span>
+                                              </div>
+                                          </div>
+                                          <div class="row text-center">
+                                              <div class="col-md-3">
+                                                  <img src="img/iccar.png" alt="">
+                                                  <br/>
+                                                  <br/>
+                                                  <h6>პარკინგი</h6>
+                                                  <span id="single_house_parking">8</span>
+                                              </div>
+                                              <div class="col-md-3">
+                                                  <img src="img/icou.png" alt="">
+                                                  <br/>
+                                                  <br/>
+                                                  <h6>აივანი</h6>
+                                                  <span id="single_house_balcony">8</span>
+                                              </div>
+                                              <!--<div class="col-md-4">-->
+                                              <!--<img src="img/icre.png" alt="">-->
+                                              <!--<br/>-->
+                                              <!--<br/>-->
+                                              <!--<h6>რემონტი</h6>-->
+                                              <!--<span id="single_house_repair">8</span>-->
+                                              <!--</div>-->
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-5" id="house_col_top">
+                                          <div class="single_house_div_wrapper broker-info-container">
+                                              <h3 id="house_name">ბინა ეკოლოგიურად სუფთა</h3>
+                                              <!--<br/>-->
+                                              <small id="house_city_region">თბილისი,ცინცაძის ქუჩა საბურთალო</small>
+                                              <hr>
+                                              <div class="row">
+                                                  <div class="col-xl-5">
+                                                      <div class="card text-center">
+                                                          <div class="card-header">
+                                                              <h3 id="house_space">160 მ2</h3>
+                                                          </div>
+                                                      </div>
+                                                      <div class="card text-center">
+                                                          <div class="card-header">
+                                                              <h3 id="house_price">160000 <span class="gel-font">a</span></h3>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-xl-7">
+                                                      <div class="row">
+                                                          <div class="col-xl-3" id="brocker_photo">
+                                                              <img id="single_brocker" class="rounded-circle" src="img/no-image.jpg" alt="">
+                                                          </div>
+                                                          <div class="col-xl-9" id="brocker_info">
+                                                              <span id="house_user">დათა ფირცხალავა</span>
+                                                              <br/>
+                                                              <small id="house_userPhonenumber">+995 595 69 02 29</small>
+                                                              <br/>
+                                                              <!--<small>+995 598 66 18 18</small>-->
+                                                          </div>
+                                                          <div class="col-xl-12">
+                                                              <button style="width:100%;" id="contact_brocker" class="btn btn-primary">დაუკავშირდი მრჩეველს</button>
+                                                          </div>
+                                                      </div>
+                                                      <br/>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </section>
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">დახურვა</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <footer>
+          <div class="footer-content nav-container">
+              <a href="home.html"><img src="img/colliers White Logo-01.png"></a>
+              <div class="footer-social-icons">
+                  <div><i class="fab fa-facebook-f"></i></div>
+                  <div><i class="fab fa-linkedin-in"></i></div>
+                  <div><i class="fab fa-google-plus-g"></i></div>
+                  <div><i class="fab fa-youtube"></i></div>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <div class="nav-container">
+              <span>2018. ყველა უფლება დაცულია</span>
+            </div>
+          </div>
+      </footer>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<script src="owlCarousel/js/owl.carousel.min.js"></script>
+<script src="js/index.js"></script>
+<!--<script src="multirange.js"></script>-->
+<script src="nouislider.min.js"></script>
+<script src="js/getOptionsForIndex.js"></script>
+<script src="js/main.js"></script>
+<script src="js/house.js"></script>
+<script src="js/houses.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAibDwZPFPU6qdLXwCiK9xw3T8pABJuweE&libraries=places&callback=initMap"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+.noUi-connects {
+    height: 4px;
+}
+
+.noUi-connect,.noUi-base  {
+    background-color: #ffc600;
+}
+
+.noUi-horizontal {
+    border: none;
+    box-shadow: transparent;
+    height: 4px;
+    border-radius: 50%;
+}
+
+.noUi-connect, .noUi-base {
+    border-radius: 50px;
+}
+
+.noUi-handle {
+    box-shadow: none;
+    border: none;
+}
+
+.noUi-horizontal .noUi-handle {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    top: -11px;
+}
+.noUi-horizontal .noUi-handle:focus {
+    outline:0;
+}
+
+.noUi-handle:after,
+.noUi-handle:before {
+    background: transparent;
+}
+
+.houses_select .noUi-handle{
+    background-color: #ffc600;
+}

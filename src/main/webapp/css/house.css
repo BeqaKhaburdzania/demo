@@ -1,0 +1,245 @@
+body {
+    background-color: #f3f3f3;
+}
+
+.margin-top-25 {
+    margin-top: 25px !important;
+}
+.img_wrapper{
+    width:100%;
+    height:500px;
+    position:relative;
+}
+.img_wrapper span{
+    color:#fff;
+    position:absolute;
+    top:280px;
+    font-size:60px;
+    cursor:pointer;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+}
+.img_wrapper #single_slide_left{
+    left: 50px;
+}
+.img_wrapper #single_slide_right{
+    right: 50px;
+}
+.singleSlideImages{
+    height:inherit;
+}
+.single_house_slide{
+    width:100%;
+    height:inherit;
+    object-fit: cover;
+}
+.singleSlideImagesFull{
+    width:100%;
+    height:inherit;
+}
+.gm-nav-wrapper{
+    width:100%;
+
+}
+.card-header h3{
+    padding-bottom:0px !important;
+    margin:0 !important;
+    font-size:14px;
+}
+.single_house {
+    background-color:#F3F3F3;
+    width:100%;
+}
+
+.single_house h1 {
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+.single_house_footer{
+    width:100%;
+    margin:0 auto;
+    padding:20px 50px;
+    padding-top:20px;
+    /*padding-bottom:100px;*/
+    word-wrap:break-word;
+}
+
+.house-icons-container {
+    margin-left: 40px;
+}
+
+.single_house_footer .text-center h4 {
+    font-size: 16px;
+    padding-top: 10px;
+    margin-bottom: 0;
+}
+
+.single_house_footer h2 {
+    font-size: 22px;
+}
+
+#single_house_description {
+    font-size: 14px;
+}
+#single_brocker{
+    width: 49px;
+    height: 49px;
+    vertical-align: middle;
+}
+.single_house_div_wrapper{
+    background:#fff;
+    padding-top: 20px;
+    padding-left:20px;
+    padding-right:20px;
+    border-radius:10px;
+    width:87%;
+    -moz-box-shadow: 1px 0px 13px #a4a4a4;
+    -webkit-box-shadow: 1px 0px 13px #a4a4a4;
+    box-shadow: 1px 0px 13px #a4a4a4;
+    float: right;
+}
+#first_icons_row{
+    /*margin-bottom:50px;*/
+}
+.single_house_footer{
+    color:#05346C;
+}
+.single_house_footer p{
+    color:#4A4A4A;
+}
+.single_house_footer span{
+    color:#9B9B9B;
+}
+#contact_brocker{
+    padding: 11px 0px;
+    margin-top: 5px;
+    word-break: break-all;
+    font-size: 13px;
+}
+.row{
+    position:relative;
+}
+#house_col_top{
+    position:absolute;
+    top:-150px;
+    right:0;
+}
+
+/*.page-header .nav-container{*/
+    /*width:100% !important;*/
+/*}*/
+
+.page-header .nav-container nav {
+    padding: 5px 0px;
+}
+#house_user{
+    color:#05346C !important;
+    font-size: 12px;
+    text-align: left;
+    display: inline-block;
+    padding-left: 10px;
+    float: left;
+}
+#house_userPhonenumber {
+    display: inline-block;
+    text-align: left;
+    float: left;
+    padding-left: 10px;
+}
+.singleSlideImagesFull{
+    -webkit-box-shadow: 0px 9px 13px -5px rgba(199,193,199,1);
+    -moz-box-shadow: 0px 9px 13px -5px rgba(199,193,199,1);
+    box-shadow: 0px 9px 13px -5px rgba(199,193,199,1);
+}
+
+.rage-slider-left {
+    float: left;
+    width: 40%;
+}
+.rage-slider-right {
+    float: right;
+    width: 40%;
+    top: 10px !important;
+    left: -100px;
+}
+
+
+#house_price .gel-font {
+    font-size: 11px;
+    position: relative;
+    top: -1px;
+    color: #000;
+}
+
+
+@media(max-width:1600px){
+    #brocker_info{
+        text-align:center !important;
+        margin:0 auto;
+    }
+    #brocker_photo{
+        text-align:center;
+        margin:0 auto;
+        justify-content: center;
+    }
+    #contact_brocker{
+       font-size:13px;
+    }
+}
+
+@media(max-width: 1224px){
+    .single_house_div_wrapper {
+       width: 100%;
+    }
+}
+
+@media(max-width: 1199px){
+    #house_user,
+    #house_userPhonenumber {
+        width: 100%;
+        text-align: center;
+    }
+
+    #house_col_top {
+        top: -170px;
+    }
+
+    #contact_brocker {
+        margin: 0;
+    }
+}
+@media(max-width:990px){
+    #contact_brocker{
+        font-size:17px;
+    }
+    #brocker_info{
+        text-align:center !important;
+        margin:0 auto;
+    }
+    .single_mrg{
+        margin-top: 260px;
+    }
+    .row{
+        margin:0 auto;
+    }
+    #house_col_top{
+        left:0;
+        right:0;
+    }
+    .single_house_div_wrapper{
+        width:100%;
+    }
+
+    #house_name,
+    #house_city_region ,
+    hr {
+        padding: 0 30px;
+    }
+
+    .broker-info-container .card.text-center,
+    hr {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}

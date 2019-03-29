@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="http://www.sociablesurveyors.com/wp-content/uploads/Colliers.png" />
+    <link rel="stylesheet" href="css/BPG/bpg-nino-mtavruli.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/register.css">
+    <title>Colliers</title>
+</head>
+<body>
+<!-- Nav -->
+
+<div id="preloader" class="transition smooth-loader-wrapper">
+    <div class="transition smooth-loader">
+        <div class="transition loader1">
+            <div class="transition loader-target">
+                <div class="transition loader-target-main"></div>
+                <div class="transition loader-target-inner"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="gm_wrap" style="display:none;">
+    <div class="transition gm_main_header">
+        <section class="transition gm_nav_section" id="gm_top_nav">
+            <div class="transition nav-container">
+                <div class="transition gm-nav-wrapper">
+                    <nav class="transition navbar navbar-expand-md navbar-light">
+                        <a class="transition navbar-brand" href="/"><img src="img/logo.png" alt=""></a>
+                        <button class="transition navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="transition navbar-toggler-icon"></span>
+                        </button>
+                        <div class="transition collapse navbar-collapse navbar-toggleable-xs" id="navbarTogglerDemo02">
+                            <ul class="transition navbar-nav ml-auto">
+                                <li class="transition nav-item">
+                                    <a class="transition nav-link" href="#">ჩვენ შესახებ</a>
+                                </li>
+                                <li class="transition nav-item">
+                                    <a class="transition nav-link" href="houses.html">ბინები</a>
+                                </li>
+                                <li class="transition nav-item">
+
+                                </li>     <li class="transition nav-item">
+
+                            </li>     <li class="transition nav-item">
+                                <a class="transition nav-link" href="#">კონტაქტი</a>
+                            </li>
+                            </ul>
+                            <a id="gm-top-btn" class="transition gm-btn btn-blue btn-default navbar-btn nav-link" href="/login.html"> + <span style="font-family: 'BPG Nino Mtavruli'">შესვლა</span></a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- -->
+    <section class="transition gm-register-title">
+        <div class="transition gm-container">
+            <h1>რეგისტრაციის გვერდი</h1>
+        </div>
+    </section>
+    <br/>
+    <br/>
+    <section class="transition gm-register-content">
+        <div class="transition gm-container">
+            <button id="gm_register_person" class="transition btn btn-success float-left">ფიზიკური პირი</button>
+            <button id="gm_register_company_person" class="transition btn btn-primary float-right">იურიდიული პირი</button>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <div id="gm_person" style="display:none;">
+            <div class="transition row">
+                <div class="transition col-sm-12 col-xs-12">
+                    <h2>ფიზიკური პირი</h2>
+                    <br/>
+                    <p>გთხოვთ რეგისტრაციის გასავლელად შეავსოთ ქვემოთ მითითებული ყველა ველი. ჩვენ გამოგიგზავნით თქვენი ექაუნთის ინფორმაციას თქვენს მიერ მითითებულ იმეილზე.
+                        თქვენი კონფედენციალურობა დაცულია.
+                        თუ უკვე ხართ დარეგისტრირებული, მაშინ გაიარეთ ავტორიზაცია</p>
+                    <br/>
+                    <hr>
+                    <br/>
+                    <div id="alert_register_person" style="display:none;" class="transition alert alert-danger text-center"></div>
+                    <h2>მომხმარებლის რეგისტრაცია</h2>
+                    <form method="post">
+                        <div class="transition row">
+                            <div class="transition col-sm-6">
+                                <div class="transition form-group">
+                                    <label>სახელი <span style="color:red"> *</span></label>
+                                    <input type="text" class="transition form-control" id="gm_register_firstname" aria-describedby="firstname">
+                                </div>
+                            </div>
+                            <div class="transition col-sm-6">
+                                <div class="transition form-group">
+                                    <label>გვარი <span style="color:red"> *</span></label>
+                                    <input type="text" class="transition form-control" id="gm_register_lastname" aria-describedby="lastname">
+                                </div>
+                            </div>
+                        <div class="transition col-sm-12">
+                            <div class="transition row">
+                                <div class="transition col-sm-6">
+                                    <div class="transition form-group">
+                                        <label>პირადი ნომერი</label>
+                                        <input type="text" class="transition form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\.*)\./g, '$1');" maxlength="11" id="gm_register_private_number" aria-describedby="phoneNumber">
+                                    </div>
+                                </div>
+                                <div class="transition col-sm-6">
+                                    <div class="transition form-group">
+                                        <label>მობილურის ნომერი <span style="color:red"> *</span></label>
+                                        <input type="text" class="transition form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\.*)\./g, '$1');" maxlength="9" id="gm_register_phone_number" aria-describedby="phoneNumber">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="transition col-sm-12">
+                            <div class="transition row">
+                                <div class="transition col-sm-6">
+                                    <div class="transition form-group">
+                                        <label>ელ.ფოსტა <span style="color:red"> *</span></label>
+                                        <input type="email" class="transition form-control" id="gm_register_email" aria-describedby="email adress">
+                                    </div>
+                                </div>
+                                <div class="transition col-sm-6">
+                            <div class="transition form-group">
+                                <label>დაბადების თარიღი</label>
+                                <input type="date" class="transition form-control" id="gm_register_date" aria-describedby="email adress">
+                            </div>
+                                </div>
+                        </div>
+                        </div>
+                        <hr>
+                        <div class="transition col-sm-12">
+                            <div class="transition row">
+                                <div class="transition col-sm-6">
+                                    <div class="transition form-group">
+                                        <label>მომხმარებელი*</label>
+                                        <input type="text" class="transition form-control" id="gm_register_username" aria-describedby="username">
+                                    </div>
+                                </div>
+                                <div class="transition col-sm-6">
+                                    <div class="transition form-group">
+                                        <label>პაროლი<span style="color:red"> *</span></label>
+                                        <input type="password" class="transition form-control" id="gm_register_password" aria-describedby="password">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="transition col-sm-12">
+                        <div class="transition row">
+                            <div class="transition col-sm-6 ">
+                                <div class="transition form-group">
+                                    <label>კომენტარი</label>
+                                    <input type="text" class="transition form-control" id="gm_register_comment" aria-describedby="comment">
+                                </div>
+                            </div>
+                            <div class="transition col-sm-6 ">
+                                <div class="transition form-group">
+                                    <label>სტატუსი <span style="color:red"> *</span></label>
+                                    <input type="text" class="transition form-control" id="gm_register_status" aria-describedby="comment">
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                        </div>
+            <hr>
+            <div class="transition gm-recaptcha">
+                <h2>შემოწმება</h2>
+                <p>დაადასტურეთ, რომ ხართ ადამიანი*</p>
+                <div class="transition g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+                <br/>
+                <input type="checkbox">&nbsp;მე გავეცანი წესებს და ვეთანხმები.
+            </div>
+            <br/>
+            <button id="person_reg_button" class="transition btn btn-light">დარეგისტრირება</button>
+            <hr>
+            </form>
+        </div>
+        </div>
+            </div>
+            <div id="gm_company_person" style="display:none;">
+                <div class="transition row">
+                    <div class="transition col-sm-12 col-xs-12">
+                        <h2>იურიდიული პირი</h2>
+                        <br/>
+                        <p>გთხოვთ რეგისტრაციის გასავლელად შეავსოთ ქვემოთ მითითებული ყველა ველი. ჩვენ გამოგიგზავნით თქვენი ექაუნთის ინფორმაციას თქვენს მიერ მითითებულ იმეილზე.
+                            თქვენი კონფედენციალურობა დაცულია.
+                            თუ უკვე ხართ დარეგისტრირებული, მაშინ გაიარეთ ავტორიზაცია</p>
+                        <br/>
+                        <hr>
+                        <br/>
+                        <div class="transition row">
+                        <div class="transition col-sm-12 col-xs-12">
+                            <div class="transition alert alert-danger text-center" id="gm_register_main_alert" style="display:none;"></div>
+                        </div>
+                        </div>
+                        <h2>კომპანიის ინფორმაცია</h2>
+                        <form method="post">
+                            <div class="transition row">
+                                <div class="transition col-sm-12">
+                                    <div class="transition form-group">
+                                        <label>მომხმარებელი <span style="color:red"> *</span></label>
+                                        <input  type="text" class="transition form-control" id="gm_company_register_username" aria-describedby="firstname">
+                                    </div>
+                                </div>
+                                <div class="transition col-sm-6">
+                                    <div class="transition form-group">
+                                        <label>დასახელება <span style="color:red"> *</span></label>
+                                        <input  type="text" class="transition form-control" id="gm_company_register_name" aria-describedby="firstname">
+                                    </div>
+                                </div>
+                                <div class="transition col-sm-6">
+                                    <div class="transition form-group">
+                                        <label>საგადასახადო კოდი <span style="color:red"> *</span></label>
+                                        <input type="text" class="transition form-control" id="gm_company_register_code" aria-describedby="lastname">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="transition row">
+                                <div class="transition col-sm-6">
+                            <div class="transition form-group">
+                                <label>ტელეფონის ნომერი <span style="color:red"> *</span></label>
+                                <input type="text" class="transition form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\.*)\./g, '$1');" maxlength="9"  id="gm_company_register_phone" aria-describedby="email adress">
+                            </div>
+                                </div>
+                                <div class="transition col-sm-6">
+                            <div class="transition form-group">
+                                <label>ელ.ფოსტა <span style="color:red"> *</span></label>
+                                <input type="text" class="transition form-control" id="gm_company_register_email" aria-describedby="username">
+                            </div>
+                                </div>
+                        </div>
+                            <div class="transition row">
+                                <div class="transition col-sm-6 col-xs-12">
+                                    <div class="transition form-group">
+                                        <label>რეგისტრაციის მისამართი</label>
+                                        <input type="text" class="transition form-control" id="gm_company_register_adress" aria-describedby="password">
+                                    </div>
+                                </div>
+                                <div class="transition col-sm-6 col-xs-12">
+                                    <div class="transition form-group">
+                                        <label>საქმიანობის სფერო</label>
+                                        <input type="text" class="transition form-control" id="gm_company_register_info" aria-describedby="re-type">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="transition row">
+                                <div class="transition col-sm-6 col-xs-12">
+                                    <div class="transition form-group">
+                                        <label>პაროლი*</label>
+                                        <input type="password" class="transition form-control" id="gm_company_register_password" aria-describedby="password">
+                                    </div>
+                                </div>
+                                <div class="transition col-sm-6 col-xs-12">
+                                    <div class="transition form-group">
+                                        <label>კომენტარი</label>
+                                        <input type="text" class="transition form-control" id="gm_company_register_comment" aria-describedby="password re-type">
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                        </form>
+                    </div>
+                        <div class="transition col-sm-12">
+                            <div class="transition add_contact_person">
+                            <!-- Modal -->
+                            <!-- Modal -->
+                            <div class="transition modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                <div class="transition modal-dialog" role="document">
+                                    <div class="transition modal-content">
+                                        <div class="transition modal-header">
+                                            <h5 class="transition modal-title" id="exampleModalLongTitle">კონტაქტების დამატება</h5>
+                                            <button type="button" class="transition close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="transition modal-body">
+                                            <div class="transition row">
+                                                <div class="transition col-sm-12">
+                                                    <div id="alert_register" style="display:none;" class="transition alert alert-danger text-center"></div>
+                                                </div>
+                                            </div>
+                                            <div id="contact_persons_form">
+                                                <form>
+                                                    <div class="transition row">
+                                                        <div class="transition col-sm-6">
+                                                            <div class="transition form-group">
+                                                                <label>სახელი <span style="color:red"> *</span></label>
+                                                                <input type="text" class="transition form-control" id="company_contact_firstName" aria-describedby="email adress">
+                                                            </div>
+                                                        </div>
+                                                        <div class="transition col-sm-6">
+                                                            <div class="transition form-group">
+                                                                <label>გვარი <span style="color:red"> *</span></label>
+                                                                <input type="text" class="transition form-control" id="company_contact_lastName" aria-describedby="lastname">
+                                                            </div>
+                                                        </div>
+                                                        <div class="transition col-sm-12">
+                                                            <div class="transition form-group">
+                                                                <label>პირადი ნომერი</label>
+                                                                <input type="text" class="transition form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\.*)\./g, '$1');" maxlength="11" id="company_contact_idnumber" aria-describedby="username">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="transition row">
+                                                        <div class="transition col-sm-6">
+                                                            <div class="transition form-group">
+                                                                <label>მობილურის ნომერი <span style="color:red"> *</span></label>
+                                                                <input type="text" class="transition form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\.*)\./g, '$1');" maxlength="9" id="company_contact_phone" aria-describedby="email adress">
+                                                            </div>
+                                                        </div>
+                                                        <div class="transition col-sm-6">
+                                                            <div class="transition form-group">
+                                                                <label>ელ.ფოსტა <span style="color:red"> *</span></label>
+                                                                <input type="text" class="transition form-control" id="company_contact_email" aria-describedby="username">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="transition row">
+                                                        <div class="transition col-sm-6">
+                                                            <div class="transition form-group">
+                                                                <label>დაბადების თარიღი</label>
+                                                                <input type="date" class="transition form-control" id="company_contact_birth_date" aria-describedby="email adress">
+                                                            </div>
+                                                        </div>
+                                                        <div class="transition col-sm-6">
+                                                            <div class="transition form-group">
+                                                                <label>პაროლი <span style="color:red"> *</span></label>
+                                                                <input type="password" class="transition form-control" id="company_contact_password" aria-describedby="username">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="transition row">
+                                                        <div class="transition col-sm-6">
+                                                            <div class="transition form-group">
+                                                                <label>კომენტარი</label>
+                                                                <input type="text" class="transition form-control" id="company_contact_comment" aria-describedby="email adress">
+                                                            </div>
+                                                        </div>
+                                                        <div class="transition col-sm-6">
+                                                            <div class="transition form-group">
+                                                                <label>სტატუსი <span style="color:red"> *</span></label>
+                                                                <input type="text" class="transition form-control" id="company_contact_status" aria-describedby="username">
+                                                            </div>
+                                                        </div>
+                                                        <div class="transition contact_add_btn_wrapper">
+                                                            <button id="company_add_contact_btn" class="transition btn btn-primary">დამატება</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="transition modal-footer">
+                                            <button type="button" class="transition btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ------- --->
+                        </div>
+                        </div>
+                    <div class="transition col-sm-12">
+                        <div class="transition gm_register_contacts">
+                            <h3>საკონტაქტო პირები</h3>
+                            <br/>
+                            <br/>
+                            <table id="contacts_table">
+                                <tr>
+                                    <th>სახელი,გვარი</th>
+                                    <th>ელ.ფოსტა</th>
+                                    <th>პირადი ნომერი</th>
+                                    <th>წაშლა</th>
+                                </tr>
+                            </table>
+                        </div>
+                        <br/>
+                        <div class="transition text-center" style="margin:0 auto;">
+                            <button id="gm_show_contacts_btn" data-toggle="modal" data-target="#exampleModalLong" class="transition btn btn-success"><span style="font-size:20px;">დამატება</span></button>
+                        </div>
+                        <br/>
+                        <br/>
+                            <div class="transition gm-recaptcha">
+                                <h2>შემოწმება</h2>
+                                <p>დაადასტურეთ, რომ ხართ ადამიანი <span style="color:red"> *</span></p>
+                                <div class="transition g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+                                <br/>
+                                <input type="checkbox">&nbsp;მე გავეცანი წესებს და ვეთანხმები.
+                            </div>
+                            <br/>
+                            <button id="company_reg_button" class="transition btn btn-light">დარეგისტრირება</button>
+                            <hr>
+                </div>
+            </div>
+            </div>
+</div>
+</section>
+<footer class="transition gm-main-footer">
+    <div class="transition footer-wrapper">
+        <div class="transition gm-container align-items-center">
+            <div class="transition row">
+                <div class="transition col-lg">
+                    <img id="gm-footer-logo" src="img/footer-logo.png" alt="">
+                    <p>"Colliers International Georgia" სრულ მომსახურებას სთავაზობს ინვესტორებს, უძრავი ქონების მესაკუთრეებს
+                        ,მოიჯარეებსა და დეველოპერებს. კომპანიის ძირითად მიმართულებებს
+                        უძრავი ქონების კვლევა, კონსალტინგი და კვლევა წარმოადგენს.</p>
+                    <span>0322 22 44 77</span><br/>
+                    <span>ალექსიძის ქ. 12, თბილისი</span>
+                </div>
+                <div class="transition col-lg">
+                    <div class="transition float-right" id="gm_google_map"></div>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="transition gm-container" id="gm_footer_list">
+            <div class="transition row">
+                <div class="transition col-lg">
+                    <span id="gm-copyright">2018. ყველა უფლება დაცულია</span>
+                </div>
+                <div class="transition col-lg">
+                    <ul class="transition footer-ul float-right">
+                        <li class="transition nav-item"><span class="transition fa fa-youtube-play"></span></li>
+                        <li class="transition nav-item"><span class="transition fa fa-facebook-f"></span></li>
+                        <li class="transition nav-item"><span class="transition fa fa-google-plus"></span></li>
+                        <li class="transition nav-item"><span class="transition fa fa-linkedin"></span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/main.js"></script>
+<script src="js/register.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAibDwZPFPU6qdLXwCiK9xw3T8pABJuweE&libraries=places&callback=initMap"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</body>
+</html>

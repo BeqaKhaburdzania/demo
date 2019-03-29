@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Admin Panel</title>
+  <link href="css/sb-admin.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type='text/css'>
+  <link rel="shortcut icon" type="image/x-icon" href="http://www.sociablesurveyors.com/wp-content/uploads/Colliers.png" />
+  <link rel="stylesheet" href="css/BPG/bpg-nino-mtavruli.css">
+</head>
+
+<body class="fixed-nav sticky-footer bg-dark admin_wrapper" id="gm_wrap" style="display:none">
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <a class="navbar-brand" href="index.html">Colliers AdminPanel</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+          <a class="nav-link" href="#" id="admin_dashboard">
+            <i class="fa fa-fw fa-dashboard"></i>
+            <span class="nav-link-text">მთავარი</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+          <a class="nav-link" href="#" id="admin_edit_houses">
+            <i class="fa fa-fw fa-area-chart"></i>
+            <span class="nav-link-text">ბინების შეცვლა</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+          <a class="nav-link" href="#" id="admin_add_house">
+            <i class="fa fa-fw fa-table"></i>
+            <span class="nav-link-text">ბინების დამატება</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+          <a class="nav-link" href="#" id="admin_edit_parameters">
+            <i class="fa fa-fw fa-table"></i>
+            <span class="nav-link-text">პარამეტრები</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav sidenav-toggler">
+        <li class="nav-item">
+          <a class="nav-link text-center" id="sidenavToggler">
+            <i class="fa fa-fw fa-angle-left"></i>
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+            <i class="fa fa-fw fa-sign-out"></i>Logout</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<div class="content-wrapper">
+  <div class="container-fluid" id="admin_content">
+  </div>
+  <div class="transition modal fade" id="crud_parameters" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="transition modal-dialog" role="document">
+      <div class="transition modal-content">
+        <div class="transition modal-header">
+          <h5 class="transition modal-title" id="exampleModalLongTitle">პარამეტრების შეცვლა</h5>
+          <button type="button" class="transition close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="transition modal-body">
+          <div class="transition row">
+            <div class="transition col-sm-12">
+              <div id="alert_register" style="display:none;" class="transition alert alert-danger text-center"></div>
+            </div>
+          </div>
+          <div id="contact_persons_form">
+            <form>
+              <div class="transition row">
+                <div class="transition col-md-12">
+                  <div class="transition form-group">
+                    <label>სახელი <span style="color:red"> *</span></label>
+                    <input type="text" class="transition form-control" id="newParameter" aria-describedby="email adress">
+                  </div>
+                </div>
+              </div>
+              <div class="transition contact_add_btn_wrapper parametersBtnWrapper">
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="transition modal-footer">
+          <button type="button" class="transition btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- /.container-fluid-->
+    <!-- /.content-wrapper-->
+    <footer class="sticky-footer">
+      <div class="container">
+        <div class="text-center">
+          <small>Copyright © Your Website 2018</small>
+        </div>
+      </div>
+    </footer>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+    <!-- Logout Modal-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/admin.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAibDwZPFPU6qdLXwCiK9xw3T8pABJuweE&libraries=places"></script>
+</body>
+
+</html>

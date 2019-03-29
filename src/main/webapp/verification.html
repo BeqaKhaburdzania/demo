@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+    <link rel="shortcut icon" type="image/x-icon" href="http://www.sociablesurveyors.com/wp-content/uploads/Colliers.png" />
+    <link rel="stylesheet" href="css/BPG/bpg-nino-mtavruli.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Colliers</title>
+</head>
+<body>
+
+<!-- Nav -->
+  <div id="preloader" class="transition transition smooth-loader-wrapper">
+    <div class="transition smooth-loader">
+      <div class="transition loader1">
+      <div class="transition loader-target">
+        <div class="transition loader-target-main"></div>
+        <div class="transition loader-target-inner"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="gm_wrap" style="display:none;">
+<div class="transition gm_main_header">
+    <section class="transition gm_nav_section" id="gm_top_nav">
+        <div class="transition nav-container">
+            <div class="transition gm-nav-wrapper">
+                <nav class="transition navbar navbar-expand-md navbar-light">
+                    <a class="transition navbar-brand" href="/"><img src="img/logo.png" alt=""></a>
+                    <button class="transition navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="transition navbar-toggler-icon"></span>
+                    </button>
+                    <div class="transition collapse navbar-collapse navbar-toggleable-xs" id="navbarTogglerDemo02">
+                        <ul class="transition navbar-nav ml-auto">
+                            <li class="transition nav-item">
+                                <a class="transition nav-link" href="#">ჩვენ შესახებ</a>
+                            </li>
+                            <li class="transition nav-item">
+                                <a class="transition nav-link" href="houses.html">ბინები</a>
+                            </li>
+                            <li class="transition nav-item">
+
+                            </li>     <li class="transition nav-item">
+
+                        </li>     <li class="transition nav-item">
+                            <a class="transition nav-link" href="#">კონტაქტი</a>
+                        </li>
+                        </ul>
+                        <a id="gm-top-btn" class="transition gm-btn btn-blue btn-default navbar-btn nav-link" href="/login.html"> + <span style="font-family: 'BPG Nino Mtavruli'">შესვლა</span></a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </section>
+</div>
+<!-- -->
+<section class="transition gm-login-section">
+    <div class="transition gm-container">
+        <div class="transition gm-login-box">
+            <div id="verification_alert"></div>
+            <div class="transition gm-login-box-title">
+                <h2>ვერიფიკაცია</h2>
+            </div>
+            <br/>
+            <div class="transition gm-login-form">
+                <form method="post">
+                    <a id="gm_resend_code" href="">კოდის ხელახლა გაგზავნა</a>
+                    <div class="transition form-group">
+                        <label for="username" class="transition text-center">კოდი</label>
+                        <input type="text" class="transition form-control" id="gm_verificate_code" aria-describedby="username">
+                        <small id="usernameHelp" class="transition form-text text-muted">შეიყვანეთ თქვენს მობილურზე გამოგზავნილი კოდი</small>
+                    </div>
+                    <br/>
+                    <br/>
+                    <div class="transition row text-center">
+                        <div class="transition col-sm-12 col-xs-12">
+                            <button id="gm-verificate" class="transition btn btn-light">დადასტურება</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="transition gm-main-footer">
+    <div class="transition footer-wrapper">
+        <div class="transition gm-container align-items-center">
+            <div class="transition row">
+                <div class="transition col-lg">
+                    <img id="gm-footer-logo" src="img/footer-logo.png" alt="">
+                    <p>"Colliers International Georgia" სრულ მომსახურებას სთავაზობს ინვესტორებს, უძრავი ქონების მესაკუთრეებს
+                        ,მოიჯარეებსა და დეველოპერებს. კომპანიის ძირითად მიმართულებებს
+                        უძრავი ქონების კვლევა, კონსალტინგი და კვლევა წარმოადგენს.</p>
+                    <span>0322 22 44 77</span><br/>
+                    <span>ალექსიძის ქ. 12, თბილისი</span>
+                </div>
+                <div class="transition col-lg">
+                    <div class="transition float-right" id="gm_google_map"></div>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="transition gm-container" id="gm_footer_list">
+            <div class="transition row">
+                <div class="transition col-lg">
+                    <span id="gm-copyright">2018. ყველა უფლება დაცულია</span>
+                </div>
+                <div class="transition col-lg">
+                    <ul class="transition footer-ul float-right">
+                        <li class="transition nav-item"><span class="transition fa fa-youtube-play"></span></li>
+                        <li class="transition nav-item"><span class="transition fa fa-facebook-f"></span></li>
+                        <li class="transition nav-item"><span class="transition fa fa-google-plus"></span></li>
+                        <li class="transition nav-item"><span class="transition fa fa-linkedin"></span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/main.js"></script>
+<script src="js/verificate.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAibDwZPFPU6qdLXwCiK9xw3T8pABJuweE&libraries=places&callback=initMap"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</body>
+</html>
